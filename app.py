@@ -12,7 +12,7 @@ llm = Llama(
 def generate_response(prompt):
     output = llm(
         f"\n{prompt}\n",
-        max_tokens=500,  # Generate up to 256 tokens
+        max_tokens=2000,  # Generate up to 256 tokens
         stop=[""], 
         echo=True,  # Whether to echo the prompt
     )
